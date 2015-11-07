@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		640AED8B1BEE3CE400786322 /* coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 640AED8A1BEE3CE400786322 /* coffee.png */; };
+		640AED8E1BEE65C000786322 /* SKSConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 640AED8D1BEE65C000786322 /* SKSConfiguration.m */; };
 		647AB9891BEDBCFA0098BA26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB9881BEDBCFA0098BA26 /* Foundation.framework */; };
 		647AB98B1BEDBCFA0098BA26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */; };
 		647AB98D1BEDBCFA0098BA26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98C1BEDBCFA0098BA26 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		640AED8A1BEE3CE400786322 /* coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee.png; sourceTree = "<group>"; };
+		640AED8C1BEE658400786322 /* SKSConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSConfiguration.h; sourceTree = "<group>"; };
+		640AED8D1BEE65C000786322 /* SKSConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSConfiguration.m; sourceTree = "<group>"; };
 		647AB9851BEDBCFA0098BA26 /* intern1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intern1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647AB9881BEDBCFA0098BA26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 				640AED8A1BEE3CE400786322 /* coffee.png */,
 				647AB9A61BEDBCFA0098BA26 /* Images.xcassets */,
 				647AB98F1BEDBCFA0098BA26 /* Supporting Files */,
+				640AED8C1BEE658400786322 /* SKSConfiguration.h */,
+				640AED8D1BEE65C000786322 /* SKSConfiguration.m */,
 			);
 			path = intern1;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				647AB9991BEDBCFA0098BA26 /* AppDelegate.m in Sources */,
+				640AED8E1BEE65C000786322 /* SKSConfiguration.m in Sources */,
 				647AB9A21BEDBCFA0098BA26 /* MasterViewController.m in Sources */,
 				647AB9951BEDBCFA0098BA26 /* main.m in Sources */,
 				647AB9A51BEDBCFA0098BA26 /* DetailViewController.m in Sources */,
