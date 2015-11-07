@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AA857C5F-EC99-4893-B172-DDEA4D37C8AB</string>
+	<string>1FFE01FF-0229-4711-BB28-6EA969F347B1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>intern1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>13922BEB-9C6A-4331-B650-83667C38E1C9</key>
+		<key>42E08796-87BB-4A42-AC73-35E9101742A1</key>
 		<string>ssh://github.com/ssilwal/yhack15.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>intern1/intern1.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>13922BEB-9C6A-4331-B650-83667C38E1C9</key>
+		<key>42E08796-87BB-4A42-AC73-35E9101742A1</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>13922BEB-9C6A-4331-B650-83667C38E1C9</string>
+	<string>42E08796-87BB-4A42-AC73-35E9101742A1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>13922BEB-9C6A-4331-B650-83667C38E1C9</string>
+			<string>42E08796-87BB-4A42-AC73-35E9101742A1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>yhack15</string>
 		</dict>

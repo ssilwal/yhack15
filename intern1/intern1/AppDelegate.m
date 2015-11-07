@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  intern1
 //
-//  Created by Sneha Silwal on 11/6/15.
+//  Created by Sneha Silwal on 11/7/15.
 //  Copyright (c) 2015 Sneha Silwal. All rights reserved.
 //
 
@@ -13,6 +13,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+        splitViewController.delegate = (id)navigationController.topViewController;
+    }
     return YES;
 }
 							
