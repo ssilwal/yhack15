@@ -7,17 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "MasterViewController.h"
+#import "CoffeeRunDoc.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
-    }
+    CoffeeRunDoc *run1 = [[CoffeeRunDoc alloc] initWithTitle:@"Coffee Run 1" price:9.99 thumbImage:[UIImage imageNamed:@"coffee.png"]];
+    CoffeeRunDoc *run2 = [[CoffeeRunDoc alloc] initWithTitle:@"Coffee Run 2" price:4.99 thumbImage:[UIImage imageNamed:@"coffee.png"]];
+    NSMutableArray *runs = [NSMutableArray arrayWithObjects:run1, run2, nil];
+
+    UINavigationController *navController = (UINavigationController *) self.window.rootViewController;
+    MasterViewController *masterController = [navController.viewControllers objectAtIndex:0];
+    masterController.runs = runs;
+
     return YES;
 }
 							
@@ -47,5 +51,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end

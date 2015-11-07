@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640AED8B1BEE3CE400786322 /* coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 640AED8A1BEE3CE400786322 /* coffee.png */; };
 		647AB9891BEDBCFA0098BA26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB9881BEDBCFA0098BA26 /* Foundation.framework */; };
 		647AB98B1BEDBCFA0098BA26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */; };
 		647AB98D1BEDBCFA0098BA26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98C1BEDBCFA0098BA26 /* UIKit.framework */; };
@@ -23,6 +24,8 @@
 		647AB9B01BEDBCFA0098BA26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98C1BEDBCFA0098BA26 /* UIKit.framework */; };
 		647AB9B81BEDBCFA0098BA26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647AB9B61BEDBCFA0098BA26 /* InfoPlist.strings */; };
 		647AB9BA1BEDBCFA0098BA26 /* intern1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9B91BEDBCFA0098BA26 /* intern1Tests.m */; };
+		647AB9C71BEDC2790098BA26 /* CoffeeRunData.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9C61BEDC2790098BA26 /* CoffeeRunData.m */; };
+		647AB9CA1BEDC44B0098BA26 /* CoffeeRunDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9C91BEDC44B0098BA26 /* CoffeeRunDoc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		640AED8A1BEE3CE400786322 /* coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee.png; sourceTree = "<group>"; };
 		647AB9851BEDBCFA0098BA26 /* intern1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intern1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647AB9881BEDBCFA0098BA26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +62,10 @@
 		647AB9B51BEDBCFA0098BA26 /* intern1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "intern1Tests-Info.plist"; sourceTree = "<group>"; };
 		647AB9B71BEDBCFA0098BA26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		647AB9B91BEDBCFA0098BA26 /* intern1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = intern1Tests.m; sourceTree = "<group>"; };
+		647AB9C51BEDC2790098BA26 /* CoffeeRunData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeRunData.h; sourceTree = "<group>"; };
+		647AB9C61BEDC2790098BA26 /* CoffeeRunData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeRunData.m; sourceTree = "<group>"; };
+		647AB9C81BEDC44B0098BA26 /* CoffeeRunDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeRunDoc.h; sourceTree = "<group>"; };
+		647AB9C91BEDC44B0098BA26 /* CoffeeRunDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeRunDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,8 @@
 		647AB98E1BEDBCFA0098BA26 /* intern1 */ = {
 			isa = PBXGroup;
 			children = (
+				647AB9C41BEDC1EA0098BA26 /* Model */,
+				647AB9C31BEDC1D50098BA26 /* GUI */,
 				647AB9971BEDBCFA0098BA26 /* AppDelegate.h */,
 				647AB9981BEDBCFA0098BA26 /* AppDelegate.m */,
 				647AB99A1BEDBCFA0098BA26 /* Main_iPhone.storyboard */,
@@ -125,6 +135,7 @@
 				647AB9A11BEDBCFA0098BA26 /* MasterViewController.m */,
 				647AB9A31BEDBCFA0098BA26 /* DetailViewController.h */,
 				647AB9A41BEDBCFA0098BA26 /* DetailViewController.m */,
+				640AED8A1BEE3CE400786322 /* coffee.png */,
 				647AB9A61BEDBCFA0098BA26 /* Images.xcassets */,
 				647AB98F1BEDBCFA0098BA26 /* Supporting Files */,
 			);
@@ -158,6 +169,24 @@
 				647AB9B61BEDBCFA0098BA26 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		647AB9C31BEDC1D50098BA26 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		647AB9C41BEDC1EA0098BA26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				647AB9C51BEDC2790098BA26 /* CoffeeRunData.h */,
+				647AB9C61BEDC2790098BA26 /* CoffeeRunData.m */,
+				647AB9C81BEDC44B0098BA26 /* CoffeeRunDoc.h */,
+				647AB9C91BEDC44B0098BA26 /* CoffeeRunDoc.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +268,7 @@
 				647AB99F1BEDBCFA0098BA26 /* Main_iPad.storyboard in Resources */,
 				647AB9A71BEDBCFA0098BA26 /* Images.xcassets in Resources */,
 				647AB99C1BEDBCFA0098BA26 /* Main_iPhone.storyboard in Resources */,
+				640AED8B1BEE3CE400786322 /* coffee.png in Resources */,
 				647AB9931BEDBCFA0098BA26 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +292,8 @@
 				647AB9A21BEDBCFA0098BA26 /* MasterViewController.m in Sources */,
 				647AB9951BEDBCFA0098BA26 /* main.m in Sources */,
 				647AB9A51BEDBCFA0098BA26 /* DetailViewController.m in Sources */,
+				647AB9CA1BEDC44B0098BA26 /* CoffeeRunDoc.m in Sources */,
+				647AB9C71BEDC2790098BA26 /* CoffeeRunData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +508,7 @@
 				647AB9BF1BEDBCFA0098BA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		647AB9C01BEDBCFA0098BA26 /* Build configuration list for PBXNativeTarget "intern1Tests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +517,7 @@
 				647AB9C21BEDBCFA0098BA26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

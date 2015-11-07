@@ -7,8 +7,9 @@
 //
 
 #import "MasterViewController.h"
-
 #import "DetailViewController.h"
+#import "CoffeeRunDoc.h"
+#import "CoffeeRunData.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -17,13 +18,11 @@
 
 @implementation MasterViewController
 
+@synthesize runs = _runs;
+
 - (void)awakeFromNib
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        self.clearsSelectionOnViewWillAppear = NO;
-        self.preferredContentSize = CGSizeMake(320.0, 600.0);
-    }
-    [super awakeFromNib];
+       [super awakeFromNib];
 }
 
 - (void)viewDidLoad
@@ -34,7 +33,8 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+  
+    self.title = @"Coffee Runs";
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,22 +55,22 @@
 
 #pragma mark - Table View
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsIn:(UITableView *)tableView
 {
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    return _runs.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyBasicCell"];
+    CoffeeRunDoc *run = [self.runs objectAtIndex:indexPath.row];
+    cell.textLabel.text = run.data.title;
+    cell.imageView.image = run.thumbImage;
     return cell;
 }
 
@@ -106,14 +106,6 @@
 }
 */
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSDate *object = _objects[indexPath.row];
-        self.detailViewController.detailItem = object;
-    }
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
@@ -122,5 +114,7 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
+
+
 
 @end
