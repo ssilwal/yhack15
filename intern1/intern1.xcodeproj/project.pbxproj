@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		640AED8B1BEE3CE400786322 /* coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 640AED8A1BEE3CE400786322 /* coffee.png */; };
-		640AED8E1BEE65C000786322 /* SKSConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 640AED8D1BEE65C000786322 /* SKSConfiguration.m */; };
-		647AB9891BEDBCFA0098BA26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB9881BEDBCFA0098BA26 /* Foundation.framework */; };
-		647AB98B1BEDBCFA0098BA26 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */; };
-		647AB98D1BEDBCFA0098BA26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98C1BEDBCFA0098BA26 /* UIKit.framework */; };
+		640AED8E1BEE65C000786322 /* SKSConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 640AED8D1BEE65C000786322 /* SKSConfiguration.mm */; };
+		640AEDAF1BEEF80400786322 /* nmsp_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDA61BEEF80400786322 /* nmsp_core.framework */; };
+		640AEDB01BEEF80400786322 /* nmsp_oem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDA71BEEF80400786322 /* nmsp_oem.framework */; };
+		640AEDB11BEEF80400786322 /* nmsp_resource_common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDA81BEEF80400786322 /* nmsp_resource_common.framework */; };
+		640AEDB21BEEF80400786322 /* nmsp_resource_nmas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDA91BEEF80400786322 /* nmsp_resource_nmas.framework */; };
+		640AEDB31BEEF80400786322 /* nmt_audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDAA1BEEF80400786322 /* nmt_audio.framework */; };
+		640AEDB41BEEF80400786322 /* nmt_cloudservices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDAB1BEEF80400786322 /* nmt_cloudservices.framework */; };
+		640AEDB51BEEF80400786322 /* nmt_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDAC1BEEF80400786322 /* nmt_core.framework */; };
+		640AEDB61BEEF80400786322 /* nmt_recognition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDAD1BEEF80400786322 /* nmt_recognition.framework */; };
+		640AEDB71BEEF80400786322 /* SpeechKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDAE1BEEF80400786322 /* SpeechKit.framework */; };
+		640AEDB81BEEF86100786322 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */; };
+		640AEDB91BEEF86100786322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB9881BEDBCFA0098BA26 /* Foundation.framework */; };
+		640AEDBA1BEEF86100786322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98C1BEDBCFA0098BA26 /* UIKit.framework */; };
+		640AEDBC1BEEF8F600786322 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDBB1BEEF8F600786322 /* AudioToolbox.framework */; };
 		647AB9931BEDBCFA0098BA26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647AB9911BEDBCFA0098BA26 /* InfoPlist.strings */; };
 		647AB9951BEDBCFA0098BA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9941BEDBCFA0098BA26 /* main.m */; };
 		647AB9991BEDBCFA0098BA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9981BEDBCFA0098BA26 /* AppDelegate.m */; };
@@ -20,7 +30,6 @@
 		647AB9A21BEDBCFA0098BA26 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9A11BEDBCFA0098BA26 /* MasterViewController.m */; };
 		647AB9A51BEDBCFA0098BA26 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9A41BEDBCFA0098BA26 /* DetailViewController.m */; };
 		647AB9A71BEDBCFA0098BA26 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647AB9A61BEDBCFA0098BA26 /* Images.xcassets */; };
-		647AB9AE1BEDBCFA0098BA26 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB9AD1BEDBCFA0098BA26 /* XCTest.framework */; };
 		647AB9AF1BEDBCFA0098BA26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB9881BEDBCFA0098BA26 /* Foundation.framework */; };
 		647AB9B01BEDBCFA0098BA26 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98C1BEDBCFA0098BA26 /* UIKit.framework */; };
 		647AB9B81BEDBCFA0098BA26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647AB9B61BEDBCFA0098BA26 /* InfoPlist.strings */; };
@@ -42,7 +51,17 @@
 /* Begin PBXFileReference section */
 		640AED8A1BEE3CE400786322 /* coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee.png; sourceTree = "<group>"; };
 		640AED8C1BEE658400786322 /* SKSConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSConfiguration.h; sourceTree = "<group>"; };
-		640AED8D1BEE65C000786322 /* SKSConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSConfiguration.m; sourceTree = "<group>"; };
+		640AED8D1BEE65C000786322 /* SKSConfiguration.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SKSConfiguration.mm; sourceTree = "<group>"; };
+		640AEDA61BEEF80400786322 /* nmsp_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmsp_core.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmsp_core.framework"; sourceTree = "<group>"; };
+		640AEDA71BEEF80400786322 /* nmsp_oem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmsp_oem.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmsp_oem.framework"; sourceTree = "<group>"; };
+		640AEDA81BEEF80400786322 /* nmsp_resource_common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmsp_resource_common.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmsp_resource_common.framework"; sourceTree = "<group>"; };
+		640AEDA91BEEF80400786322 /* nmsp_resource_nmas.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmsp_resource_nmas.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmsp_resource_nmas.framework"; sourceTree = "<group>"; };
+		640AEDAA1BEEF80400786322 /* nmt_audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmt_audio.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmt_audio.framework"; sourceTree = "<group>"; };
+		640AEDAB1BEEF80400786322 /* nmt_cloudservices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmt_cloudservices.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmt_cloudservices.framework"; sourceTree = "<group>"; };
+		640AEDAC1BEEF80400786322 /* nmt_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmt_core.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmt_core.framework"; sourceTree = "<group>"; };
+		640AEDAD1BEEF80400786322 /* nmt_recognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmt_recognition.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmt_recognition.framework"; sourceTree = "<group>"; };
+		640AEDAE1BEEF80400786322 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/SpeechKit.framework"; sourceTree = "<group>"; };
+		640AEDBB1BEEF8F600786322 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		647AB9851BEDBCFA0098BA26 /* intern1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intern1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647AB9881BEDBCFA0098BA26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +80,6 @@
 		647AB9A41BEDBCFA0098BA26 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		647AB9A61BEDBCFA0098BA26 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		647AB9AC1BEDBCFA0098BA26 /* intern1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = intern1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		647AB9AD1BEDBCFA0098BA26 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		647AB9B51BEDBCFA0098BA26 /* intern1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "intern1Tests-Info.plist"; sourceTree = "<group>"; };
 		647AB9B71BEDBCFA0098BA26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		647AB9B91BEDBCFA0098BA26 /* intern1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = intern1Tests.m; sourceTree = "<group>"; };
@@ -76,9 +94,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647AB98B1BEDBCFA0098BA26 /* CoreGraphics.framework in Frameworks */,
-				647AB98D1BEDBCFA0098BA26 /* UIKit.framework in Frameworks */,
-				647AB9891BEDBCFA0098BA26 /* Foundation.framework in Frameworks */,
+				640AEDBA1BEEF86100786322 /* UIKit.framework in Frameworks */,
+				640AEDBC1BEEF8F600786322 /* AudioToolbox.framework in Frameworks */,
+				640AEDB81BEEF86100786322 /* CoreGraphics.framework in Frameworks */,
+				640AEDB91BEEF86100786322 /* Foundation.framework in Frameworks */,
+				640AEDAF1BEEF80400786322 /* nmsp_core.framework in Frameworks */,
+				640AEDB01BEEF80400786322 /* nmsp_oem.framework in Frameworks */,
+				640AEDB11BEEF80400786322 /* nmsp_resource_common.framework in Frameworks */,
+				640AEDB21BEEF80400786322 /* nmsp_resource_nmas.framework in Frameworks */,
+				640AEDB31BEEF80400786322 /* nmt_audio.framework in Frameworks */,
+				640AEDB41BEEF80400786322 /* nmt_cloudservices.framework in Frameworks */,
+				640AEDB51BEEF80400786322 /* nmt_core.framework in Frameworks */,
+				640AEDB61BEEF80400786322 /* nmt_recognition.framework in Frameworks */,
+				640AEDB71BEEF80400786322 /* SpeechKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				647AB9AE1BEDBCFA0098BA26 /* XCTest.framework in Frameworks */,
 				647AB9B01BEDBCFA0098BA26 /* UIKit.framework in Frameworks */,
 				647AB9AF1BEDBCFA0098BA26 /* Foundation.framework in Frameworks */,
 			);
@@ -117,10 +144,19 @@
 		647AB9871BEDBCFA0098BA26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				640AEDBB1BEEF8F600786322 /* AudioToolbox.framework */,
+				640AEDA61BEEF80400786322 /* nmsp_core.framework */,
+				640AEDA71BEEF80400786322 /* nmsp_oem.framework */,
+				640AEDA81BEEF80400786322 /* nmsp_resource_common.framework */,
+				640AEDA91BEEF80400786322 /* nmsp_resource_nmas.framework */,
+				640AEDAA1BEEF80400786322 /* nmt_audio.framework */,
+				640AEDAB1BEEF80400786322 /* nmt_cloudservices.framework */,
+				640AEDAC1BEEF80400786322 /* nmt_core.framework */,
+				640AEDAD1BEEF80400786322 /* nmt_recognition.framework */,
+				640AEDAE1BEEF80400786322 /* SpeechKit.framework */,
 				647AB9881BEDBCFA0098BA26 /* Foundation.framework */,
 				647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */,
 				647AB98C1BEDBCFA0098BA26 /* UIKit.framework */,
-				647AB9AD1BEDBCFA0098BA26 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,7 +178,7 @@
 				647AB9A61BEDBCFA0098BA26 /* Images.xcassets */,
 				647AB98F1BEDBCFA0098BA26 /* Supporting Files */,
 				640AED8C1BEE658400786322 /* SKSConfiguration.h */,
-				640AED8D1BEE65C000786322 /* SKSConfiguration.m */,
+				640AED8D1BEE65C000786322 /* SKSConfiguration.mm */,
 			);
 			path = intern1;
 			sourceTree = "<group>";
@@ -294,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				647AB9991BEDBCFA0098BA26 /* AppDelegate.m in Sources */,
-				640AED8E1BEE65C000786322 /* SKSConfiguration.m in Sources */,
+				640AED8E1BEE65C000786322 /* SKSConfiguration.mm in Sources */,
 				647AB9A21BEDBCFA0098BA26 /* MasterViewController.m in Sources */,
 				647AB9951BEDBCFA0098BA26 /* main.m in Sources */,
 				647AB9A51BEDBCFA0098BA26 /* DetailViewController.m in Sources */,
@@ -434,6 +470,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/snehasilwal/Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211",
+					"(1)/sample/Frameworks",
+					/Users/snehasilwal/external/nmt/lib/ios,
+					"/Users/snehasilwal/Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "intern1/intern1-Prefix.pch";
 				INFOPLIST_FILE = "intern1/intern1-Info.plist";
@@ -447,6 +491,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/snehasilwal/Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211",
+					"(1)/sample/Frameworks",
+					/Users/snehasilwal/external/nmt/lib/ios,
+					"/Users/snehasilwal/Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "intern1/intern1-Prefix.pch";
 				INFOPLIST_FILE = "intern1/intern1-Info.plist";
