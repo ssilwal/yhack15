@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SpeechKit/SKTransaction.h>
 
-@interface DetailViewController : UIViewController;
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
 
 @property (strong, nonatomic) id detailItem;
+
+@property (weak,nonatomic) IBOutlet UIButton *toggleRecogButton;
+
+
+
+@property (strong, nonatomic) NSString *contextTag;
+@property (strong, nonatomic) NSString *language;
+@property (assign, nonatomic) SKTransactionEndOfSpeechDetection endpointer;
+//@property (weak,nonatomic)NSString *endpointer;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
