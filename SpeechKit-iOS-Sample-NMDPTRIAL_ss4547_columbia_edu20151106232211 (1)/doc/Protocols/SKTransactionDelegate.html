@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKTransactionDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SpeechKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Nuance</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/transaction:didFailWithError:suggestion:">- transaction:didFailWithError:suggestion:</option>
+		
+		<option value="//api/name/transaction:didFinishWithSuggestion:">- transaction:didFinishWithSuggestion:</option>
+		
+		<option value="//api/name/transaction:didReceiveAudio:">- transaction:didReceiveAudio:</option>
+		
+		<option value="//api/name/transaction:didReceiveInterpretation:">- transaction:didReceiveInterpretation:</option>
+		
+		<option value="//api/name/transaction:didReceiveRecognition:">- transaction:didReceiveRecognition:</option>
+		
+		<option value="//api/name/transaction:didReceiveServiceResponse:">- transaction:didReceiveServiceResponse:</option>
+		
+		<option value="//api/name/transactionDidBeginRecording:">- transactionDidBeginRecording:</option>
+		
+		<option value="//api/name/transactionDidFinishRecording:">- transactionDidFinishRecording:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKTransactionDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKTransaction.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/transactionDidBeginRecording:" title="transactionDidBeginRecording:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionDidBeginRecording:">&ndash;&nbsp;transactionDidBeginRecording:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction starts recording audio.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transactionDidBeginRecording:(id&lt;SKTransaction&gt;)<em>transaction</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionDidFinishRecording:" title="transactionDidFinishRecording:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionDidFinishRecording:">&ndash;&nbsp;transactionDidFinishRecording:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction stops recording audio.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transactionDidFinishRecording:(id&lt;SKTransaction&gt;)<em>transaction</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transaction:didReceiveRecognition:" title="transaction:didReceiveRecognition:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transaction:didReceiveRecognition:">&ndash;&nbsp;transaction:didReceiveRecognition:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction receives a text recognition.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transaction:(id&lt;SKTransaction&gt;)<em>transaction</em> didReceiveRecognition:(SKRecognition *)<em>recognition</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method will may be called multiple times depending on
+the specific recognition operation and options.  In a standard one-shot
+recognition this method will be called once after recording completes and the
+text is successfully recognized.  When using progressive dictations results this method
+may be called multiple times before recording completes.  Each successive
+recognition will replace any previously received recognition with the same chunk ID.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transaction:didReceiveInterpretation:" title="transaction:didReceiveInterpretation:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transaction:didReceiveInterpretation:">&ndash;&nbsp;transaction:didReceiveInterpretation:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction receives an interpretation.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transaction:(id&lt;SKTransaction&gt;)<em>transaction</em> didReceiveInterpretation:(SKInterpretation *)<em>interpretation</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is only called when using a grammar,
+explicitly or as a side effect of a custom recognition service.  The
+interpretation is a structured response that varies by grammar.  This method
+may be called multiple times during a transaction although under normal
+circumstances this will only be called once.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transaction:didReceiveServiceResponse:" title="transaction:didReceiveServiceResponse:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transaction:didReceiveServiceResponse:">&ndash;&nbsp;transaction:didReceiveServiceResponse:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction returns a custom application response.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transaction:(id&lt;SKTransaction&gt;)<em>transaction</em> didReceiveServiceResponse:(NSDictionary *)<em>response</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is only called when using a custom service.
+The response dictionary is an application specific json-like data structure as
+defined by the service.  This method may be called zero or more times.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transaction:didReceiveAudio:" title="transaction:didReceiveAudio:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transaction:didReceiveAudio:">&ndash;&nbsp;transaction:didReceiveAudio:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction returns audio data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transaction:(id&lt;SKTransaction&gt;)<em>transaction</em> didReceiveAudio:(id&lt;SKAudio&gt;)<em>audio</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This delegate method is usually called in response to a TTS
+request.  The audio object may contain a proprietary TTS audio buffer or other
+generic audio data.  It is usually not necessary to implement this delegate
+method; using the speakString:withVoice:delegate: and related methods on the
+<a href="../Classes/SKSession.html">SKSession</a> will automatically play and enqueue TTS responses on the associated
+session <a href="../Classes/SKAudioPlayer.html">SKAudioPlayer</a>.  Implementing this method will override the default
+action and allow the user to intercept and store the response.  Implementing this
+method will prevent the audio from being enqueued automatically, however the user
+may enqueue the audio manually via the default session audio player. Usually this is
+used to create cached TTS prompts that will be played multiple times or
+in the future when network connectivity is uncertain.</p>
+
+<p>Non-TTS transactions may also return one or more audio results when
+using a custom service.  In this case, the appropriate action is uncertain and
+the user is required to implement this delegate method and manually enqueue the
+audio on the session <a href="../Classes/SKAudioPlayer.html">SKAudioPlayer</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transaction:didFinishWithSuggestion:" title="transaction:didFinishWithSuggestion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transaction:didFinishWithSuggestion:">&ndash;&nbsp;transaction:didFinishWithSuggestion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction completes successfully.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transaction:(id&lt;SKTransaction&gt;)<em>transaction</em> didFinishWithSuggestion:(NSString *)<em>suggestion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called when the transaction has completed
+successfully; all recognition responses, interpretations, application responses
+and audio buffers have been fully received.  The suggestion is a string with
+helpful user text that describes how the user may improve recognition in future
+transactions.  This suggestion will only be present if the recognition is
+sub-optimal and may be <code>nil</code> when there are no problems.  This method or
+<a href="#//api/name/transaction:didFailWithError:suggestion:">transaction:didFailWithError:suggestion:</a> will always be called, but never both.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transaction:didFailWithError:suggestion:" title="transaction:didFailWithError:suggestion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transaction:didFailWithError:suggestion:">&ndash;&nbsp;transaction:didFailWithError:suggestion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the transaction has an error.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)transaction:(id&lt;SKTransaction&gt;)<em>transaction</em> didFailWithError:(NSError *)<em>error</em> suggestion:(NSString *)<em>suggestion</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is called when the recognition process results in an
+error due to any number of circumstances.  The audio system may fail to
+initialize, the server connection may be disrupted or a parameter specified
+during initialization, such as language or authentication information was
+invalid.  This method will still be called in the case that multiple responses
+are returned and an error occurs before the transaction completes.  This method
+or <a href="#//api/name/transaction:didFinishWithSuggestion:">transaction:didFinishWithSuggestion:</a> will always be called, but never both.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKTransaction.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Nuance. All rights reserved. Updated: 2015-10-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

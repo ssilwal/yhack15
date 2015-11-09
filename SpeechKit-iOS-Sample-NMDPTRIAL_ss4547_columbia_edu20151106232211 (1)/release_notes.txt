@@ -1,0 +1,40 @@
+================================================================================
+ SpeechKit SampleApp iOS Release Notes                       2.0.7 (2015-11-04)
+================================================================================
+
+- Main features
+    Speech Recognition - Cloud Based ASR (Automatic Speech Recognition)
+    Speech and Natural Language - Cloud based ASR with NLU (Natural Language Understanding)
+    Text and Natural Language - Cloud based NLU with text input
+    Speech Synthesis - Cloud based TTS (Text-to-Speech)
+
+- What's New
+    Implement a UI allowing text-based NLU transactions
+
+- Components (engine, audio, protocol stack versions):
+    SK SDK: <SK_SDK_VERSION>
+
+- Known Issues/Limitations
+    When using recognizeWithService:..., start/stop timestamps are not available for each recognized tokens due to NCS limitation.
+
+================================================================================
+ SpeechKit SampleApp iOS Release Notes                       2.0.6 (2015-05-21)
+================================================================================
+
+- Main features
+    Speech Recognition - Cloud Based ASR (Automatic Speech Recognition)
+    Speech and Natural Language - Cloud based ASR with NLU (Natural Language Understanding)
+    Speech Synthesis - Cloud based TTS (Text-to-Speech)
+
+- What's New
+    Initial documented release.
+    Update sample app version associated to CFBundleShortVersionString and Main StoryBoard files.
+    Include SK SDK version with which this sample app was tested in the About view.
+    Provide additional TransactionException information when errors occur.
+    Implement didReceiveServiceResponse callback.
+
+- Components (engine, audio, protocol stack versions):
+    SK SDK: 2.0.0-B009
+
+- Known Issues/Limitations
+    When using recognizeWithService:..., start/stop timestamps are not available for each recognized tokens due to NCS limitation.

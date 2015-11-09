@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "intern1/DetailViewController.m"
-            timestampString = "468640237.74789"
+            timestampString = "468649290.992261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "-transaction:didReceiveRecognition:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "intern1/DetailViewController.m"
+            timestampString = "468640904.905421"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -58,12 +74,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "intern1/DetailViewController.m"
-            timestampString = "468640904.905421"
+            timestampString = "468649290.992261"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
+            landmarkName = "-loadEarcons"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "intern1/DetailViewController.m"
+            timestampString = "468649378.836089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
+            landmarkName = "-loadEarcons"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

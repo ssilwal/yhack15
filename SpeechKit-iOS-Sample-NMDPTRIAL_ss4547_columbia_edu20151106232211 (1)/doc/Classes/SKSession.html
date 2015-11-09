@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKSession Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SpeechKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Nuance</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/audioPlayer">audioPlayer</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initWithURL:appToken:">- initWithURL:appToken:</option>
+		
+		<option value="//api/name/initWithURL:appToken:sslSummary:sslCertData:delegate:">- initWithURL:appToken:sslSummary:sslCertData:delegate:</option>
+		
+		<option value="//api/name/recognizeWithService:detection:language:data:delegate:">- recognizeWithService:detection:language:data:delegate:</option>
+		
+		<option value="//api/name/recognizeWithService:detection:language:data:grammars:options:audioUrl:delegate:">- recognizeWithService:detection:language:data:grammars:options:audioUrl:delegate:</option>
+		
+		<option value="//api/name/recognizeWithType:detection:language:delegate:">- recognizeWithType:detection:language:delegate:</option>
+		
+		<option value="//api/name/recognizeWithType:detection:language:grammars:options:audioUrl:delegate:">- recognizeWithType:detection:language:grammars:options:audioUrl:delegate:</option>
+		
+		<option value="//api/name/recognizeWithType:detection:language:options:delegate:">- recognizeWithType:detection:language:options:delegate:</option>
+		
+		<option value="//api/name/speakMarkup:withLanguage:delegate:">- speakMarkup:withLanguage:delegate:</option>
+		
+		<option value="//api/name/speakMarkup:withVoice:delegate:">- speakMarkup:withVoice:delegate:</option>
+		
+		<option value="//api/name/speakString:withLanguage:delegate:">- speakString:withLanguage:delegate:</option>
+		
+		<option value="//api/name/speakString:withVoice:delegate:">- speakString:withVoice:delegate:</option>
+		
+		<option value="//api/name/terminate">- terminate</option>
+		
+		<option value="//api/name/transactionWithService:language:data:delegate:">- transactionWithService:language:data:delegate:</option>
+		
+		<option value="//api/name/transactionWithService:language:data:grammars:options:delegate:">- transactionWithService:language:data:grammars:options:delegate:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKSession Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKSession.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/audioPlayer" title="audioPlayer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/audioPlayer">&nbsp;&nbsp;audioPlayer</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Audio Player.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) SKAudioPlayer *audioPlayer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is an instance of Audio Player that can be used to queue
+<a href="../Protocols/SKAudio.html">SKAudio</a> objects. The user is responsible to start and stop the Audio Player
+whenever requested.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithURL:appToken:" title="initWithURL:appToken:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithURL:appToken:">&ndash;&nbsp;initWithURL:appToken:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize the session.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithURL:(NSURL *)<em>url</em> appToken:(NSData *)<em>token</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>Speech service endpoint (nmsps://ApplicationID@service.nuance.com:443)
+WARNING: We strongly encourage using SSL to make sure all transactions are
+made on a secure socket. (nmsps)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appToken</code></th>
+						<td><p>The application secret token</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>SKSession instance, which must be kept alive until at least no more interactions
+with the speech server are expected.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method configures the session and may establish a connection
+with the speech server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initWithURL:appToken:sslSummary:sslCertData:delegate:" title="initWithURL:appToken:sslSummary:sslCertData:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithURL:appToken:sslSummary:sslCertData:delegate:">&ndash;&nbsp;initWithURL:appToken:sslSummary:sslCertData:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize the session.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithURL:(NSURL *)<em>url</em> appToken:(NSData *)<em>token</em> sslSummary:(NSString *)<em>sslSummary</em> sslCertData:(NSData *)<em>sslCertData</em> delegate:(id&lt;SKSessionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>Speech service endpoint (nmsps://ApplicationID@service.nuance.com:443)
+WARNING: We strongly encourage using SSL to make sure all transactions are
+made on a secure socket. (nmsps)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sslSummary</code></th>
+						<td><p>The Common Name used inside the certificate subject field (CN=)
+This parameter is important to specify in order to prevent man-in-the-middle (MITM)
+attack styles where the middle man has a valid certificate but different than the expected target.
+The value of the string is a partial or fully-qualified domain name (FQDN) and may include a star (asterisk) for wildcard
+certificates - exactly as specified in the CN field of the server X.509. (example: *.nuancemobility.net)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sslCertData</code></th>
+						<td><p>The actual X509 certificate encoded in Base64</p>
+
+<p>If this value is specified:
+After standard certificate validity checks are complete, certificates in the chain of trust are byte-compared in sequence against this certificate
+from the target server host (the tip of the chain of trust) back to the root CA, until the first match is found.
+Any match means that the connection is allowed.  If none match, the connection is disallowed.</p>
+
+<p>Therefore, this parameter can be used to either provide a strong target host check, or to &ldquo;pin&rdquo; the chain of trust to a specific root
+or intermediate CA.  If the encoded certificate is a CA rather than the target server CN, it is important to also specify the sslSummary.
+Otherwise, the sslSummary is redundant and not strictly necessary.</p>
+
+<p>Since the encoded certificates contain validity dates and other items, certificate rotation
+needs should be considered in the client design when using this parameter.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Session delegate to send event notifications to.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appToken</code></th>
+						<td><p>The application secret token</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>SKSession instance, which must be kept alive until at least no more interactions
+with the speech server are expected.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method configures the session and may establish a connection
+with the speech server.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/terminate" title="terminate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/terminate">&ndash;&nbsp;terminate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Terminate the session.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)terminate</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method terminates the session, which includes disconnecting
+from the speech server and cancelling the current transaction if any. Once the sessionDidTerminate message is signaled to the provided
+<a href="../Protocols/SKSessionDelegate.html">SKSessionDelegate</a>, it is safe to deallocate this SKSession instance.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizeWithType:detection:language:delegate:" title="recognizeWithType:detection:language:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizeWithType:detection:language:delegate:">&ndash;&nbsp;recognizeWithType:detection:language:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform a speech recognition.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)recognizeWithType:(NSString *)<em>type</em> detection:(SKTransactionEndOfSpeechDetection)<em>detection</em> language:(NSString *)<em>language</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>Speech recognition model.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detection</code></th>
+						<td><p>End of speech detection.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Spoken language.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizeWithType:detection:language:options:delegate:" title="recognizeWithType:detection:language:options:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizeWithType:detection:language:options:delegate:">&ndash;&nbsp;recognizeWithType:detection:language:options:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform a speech recognition.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)recognizeWithType:(NSString *)<em>type</em> detection:(SKTransactionEndOfSpeechDetection)<em>detection</em> language:(NSString *)<em>language</em> options:(NSDictionary *)<em>options</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>Speech recognition model</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detection</code></th>
+						<td><p>End of speech detection</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Spoken language</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Options dictionary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizeWithType:detection:language:grammars:options:audioUrl:delegate:" title="recognizeWithType:detection:language:grammars:options:audioUrl:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizeWithType:detection:language:grammars:options:audioUrl:delegate:">&ndash;&nbsp;recognizeWithType:detection:language:grammars:options:audioUrl:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform a speech recognition.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)recognizeWithType:(NSString *)<em>type</em> detection:(SKTransactionEndOfSpeechDetection)<em>detection</em> language:(NSString *)<em>language</em> grammars:(NSArray *)<em>grammars</em> options:(NSDictionary *)<em>options</em> audioUrl:(NSURL *)<em>url</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>Speech recognition model</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detection</code></th>
+						<td><p>End of speech detection</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Spoken language</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>grammars</code></th>
+						<td><p>List of grammar definitions</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Options dictionary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioUrl</code></th>
+						<td><p>Recognize from the audio file at URL (raw PCM: 16-bit 16 kHz).
+If nil audio will be recorded from the microphone instead.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizeWithService:detection:language:data:delegate:" title="recognizeWithService:detection:language:data:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizeWithService:detection:language:data:delegate:">&ndash;&nbsp;recognizeWithService:detection:language:data:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform a custom speech recognition.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)recognizeWithService:(NSString *)<em>service</em> detection:(SKTransactionEndOfSpeechDetection)<em>detection</em> language:(NSString *)<em>language</em> data:(NSDictionary *)<em>data</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>service</code></th>
+						<td><p>Service ID.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detection</code></th>
+						<td><p>End of speech detection.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Spoken language.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Application specific data dictionary.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method recognizes speech using a custom service which may
+perform many service specific tasks.  The result is not limited to speech
+recognition and may return application data, audio or any of the possible
+transaction results.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/recognizeWithService:detection:language:data:grammars:options:audioUrl:delegate:" title="recognizeWithService:detection:language:data:grammars:options:audioUrl:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/recognizeWithService:detection:language:data:grammars:options:audioUrl:delegate:">&ndash;&nbsp;recognizeWithService:detection:language:data:grammars:options:audioUrl:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform a custom speech recognition.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)recognizeWithService:(NSString *)<em>service</em> detection:(SKTransactionEndOfSpeechDetection)<em>detection</em> language:(NSString *)<em>language</em> data:(NSDictionary *)<em>data</em> grammars:(NSArray *)<em>grammars</em> options:(NSDictionary *)<em>options</em> audioUrl:(NSURL *)<em>url</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>service</code></th>
+						<td><p>Service ID.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detection</code></th>
+						<td><p>End of speech detection.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Spoken language.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>data</code></th>
+						<td><p>Application specific data dictionary.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>grammars</code></th>
+						<td><p>List of grammar definitions</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Options dictionary.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioUrl</code></th>
+						<td><p>Recognize from the audio file at URL (raw PCM: 16-bit 16 kHz).
+If nil audio will be recorded from the microphone instead.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionWithService:language:data:delegate:" title="transactionWithService:language:data:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionWithService:language:data:delegate:">&ndash;&nbsp;transactionWithService:language:data:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send a message to a custom service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)transactionWithService:(NSString *)<em>service</em> language:(NSString *)<em>language</em> data:(NSDictionary *)<em>data</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Spoken language</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detection</code></th>
+						<td><p>End of speech detection</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>Speech recognition model</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method is the same as the recognizeWithService:&hellip; methods
+except that it does not record and stream audio to the service.  Instead this
+method may be used for non-speech queries such as configuration or text
+recognition.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/transactionWithService:language:data:grammars:options:delegate:" title="transactionWithService:language:data:grammars:options:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/transactionWithService:language:data:grammars:options:delegate:">&ndash;&nbsp;transactionWithService:language:data:grammars:options:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Send a message to a custom service.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)transactionWithService:(NSString *)<em>service</em> language:(NSString *)<em>language</em> data:(NSDictionary *)<em>data</em> grammars:(NSArray *)<em>grammars</em> options:(NSDictionary *)<em>options</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>Spoken language</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>options</code></th>
+						<td><p>Options dictionary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>detection</code></th>
+						<td><p>End of speech detection</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>Speech recognition model</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speakString:withVoice:delegate:" title="speakString:withVoice:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speakString:withVoice:delegate:">&ndash;&nbsp;speakString:withVoice:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Peform text to speech from a string.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)speakString:(NSString *)<em>string</em> withVoice:(NSString *)<em>voice</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>The text to synthesize.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>voice</code></th>
+						<td><p>The voice to use for speech synthesis.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For simplicity, this method will automatically receive the <a href="../Protocols/SKAudio.html">SKAudio</a>
+data, enqueue it on the session <a href="../Classes/SKAudioPlayer.html">SKAudioPlayer</a>, and play the audio.  However,
+this will only happen if the delegate does not implement the
+transaction:didReceiveAudio: method.  You should only implement the
+transaction:didReceiveAudio: method if you need to retrieve the <a href="../Protocols/SKAudio.html">SKAudio</a> data in
+the case that you may play the audio multiple times or if you want to cache it
+for later use.  If you do implement transaction:didReceiveAudio: and you want
+to immediately play the audio, you must enqueue it with the <a href="../Classes/SKAudioPlayer.html">SKAudioPlayer</a> and
+ensure the audio player is playing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speakMarkup:withVoice:delegate:" title="speakMarkup:withVoice:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speakMarkup:withVoice:delegate:">&ndash;&nbsp;speakMarkup:withVoice:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform text to speech from SSML markup.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)speakMarkup:(NSString *)<em>markup</em> withVoice:(NSString *)<em>voice</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>markup</code></th>
+						<td><p>The SSML to synthesize.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>voice</code></th>
+						<td><p>The voice to use for speech synthesis.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speakString:withLanguage:delegate:" title="speakString:withLanguage:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speakString:withLanguage:delegate:">&ndash;&nbsp;speakString:withLanguage:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform text to speech from a string.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)speakString:(NSString *)<em>string</em> withLanguage:(NSString *)<em>language</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>string</code></th>
+						<td><p>The text to synthesize.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>The language to use for speech synthesis.  The server will
+select the best voice for the language.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/speakMarkup:withLanguage:delegate:" title="speakMarkup:withLanguage:delegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/speakMarkup:withLanguage:delegate:">&ndash;&nbsp;speakMarkup:withLanguage:delegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Perform text to speech from SSML markup.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;SKTransaction&gt;)speakMarkup:(NSString *)<em>markup</em> withLanguage:(NSString *)<em>language</em> delegate:(id&lt;SKTransactionDelegate&gt;)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>markup</code></th>
+						<td><p>The SSML to synthesize.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>language</code></th>
+						<td><p>The language to use for speech synthesis.  The server will
+select the best voice for the language.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>Transaction delegate.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKSession.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Nuance. All rights reserved. Updated: 2015-10-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

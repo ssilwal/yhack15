@@ -82,6 +82,23 @@ typedef NSUInteger SKSState;
     [self loadEarcons];
 }
 
+#pragma mark - SKAudioPlayerDelegate
+
+- (void)audioPlayer:(SKAudioPlayer *)player willBeginPlaying:(id <SKAudio>)audio
+{
+    // No need to do anything here, but feel free to get creative and leverage this handler.
+}
+
+- (void)audioPlayer:(SKAudioPlayer *)player didFinishPlaying:(id <SKAudio>)audio
+{
+    // We should make sure to let the start earcon finish playing before we start to listen.
+    // This will ensure that there are no earcon artifacts in the recording.
+    if(audio == _startEarcon) {
+        [self recognize];
+    }
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -239,6 +256,7 @@ typedef NSUInteger SKSState;
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+
 
 - (void)resetTransaction
 {

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>SKGrammarDefinition Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">SpeechKit </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Nuance</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/definitionFromItems:withID:">+ definitionFromItems:withID:</option>
+		
+		<option value="//api/name/definitionFromURL:withID:">+ definitionFromURL:withID:</option>
+		
+		<option value="//api/name/definitionWithCloudID:">+ definitionWithCloudID:</option>
+		
+		<option value="//api/name/definitionWithSynchronizedObjectID:version:">+ definitionWithSynchronizedObjectID:version:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">SKGrammarDefinition Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>SKGrammarDefinition.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>@class SKGrammarDefinition</p><p>The grammar definition is a light container allowing the
+transaction to pass essential information to the server to perform various
+grammar oriented operations from constrained recognition to complex NLU-like
+interpretations.</p>
+
+<p>Usage:
+SKSynchronizedList *list;</p>
+
+<p>SKGrammarDefinition <em>cloudDef = [SKGrammarDefinition definitionWithCloudID:@&ldquo;cloud_grammar&rdquo;];
+SKGrammarDefinition </em>listDef = [SKGrammarDefinition definitionFromSynchronizedObject:list];
+SKGrammarDefinition *instantDef = [SKGrammarDefinition definitionFromItems:[@&ldquo;one&rdquo;, @&ldquo;two&rdquo;] withID:@&ldquo;instants&rdquo;];</p>
+
+<p>[session recognizeWithType:SKTransactionSpeechTypeDictation
+                  detection:SKTransactionEndOfSpeechDetectionLong
+                   language:@&ldquo;en_us&rdquo;
+                   grammars:[cloudDef, listDef, instantDef]
+                    options:nil
+                   delegate:self];</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/definitionWithCloudID:" title="definitionWithCloudID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/definitionWithCloudID:">+&nbsp;definitionWithCloudID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Construct a grammar definition from a provisioned static grammar ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)definitionWithCloudID:(NSString *)<em>ID</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKGrammarDefinition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/definitionFromURL:withID:" title="definitionFromURL:withID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/definitionFromURL:withID:">+&nbsp;definitionFromURL:withID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Construct a grammar definition from an URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)definitionFromURL:(NSURL *)<em>url</em> withID:(NSString *)<em>ID</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method allows the user to construct a grammar definition from an URL
+that points to the grammar file. The ID parameter is user-defined and is returned to the
+user as context.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKGrammarDefinition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/definitionWithSynchronizedObjectID:version:" title="definitionWithSynchronizedObjectID:version:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/definitionWithSynchronizedObjectID:version:">+&nbsp;definitionWithSynchronizedObjectID:version:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Construct a grammar definition from the ID and version information
+for data uploaded with a synchronized list or synchronization command.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)definitionWithSynchronizedObjectID:(NSString *)<em>ID</em> version:(NSString *)<em>version</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKGrammarDefinition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/definitionFromItems:withID:" title="definitionFromItems:withID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/definitionFromItems:withID:">+&nbsp;definitionFromItems:withID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Construct a grammar definition from a list of items and a user
+specified ID.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (instancetype)definitionFromItems:(NSArray *)<em>items</em> withID:(NSString *)<em>ID</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This method allows the user to construct a temporary list that may
+be used for a single transaction when the overhead of synchronizing and
+deleting a list is prohibitive.  If the same set of items or a variation of the
+the items will be reused then a synchronized list should be used instead as it
+will reduce bandwidth consumption and recognition latency.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKGrammarDefinition.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 Nuance. All rights reserved. Updated: 2015-10-20</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

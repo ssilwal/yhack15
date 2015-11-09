@@ -22,6 +22,9 @@
 		640AEDB91BEEF86100786322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB9881BEDBCFA0098BA26 /* Foundation.framework */; };
 		640AEDBA1BEEF86100786322 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647AB98C1BEDBCFA0098BA26 /* UIKit.framework */; };
 		640AEDBC1BEEF8F600786322 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 640AEDBB1BEEF8F600786322 /* AudioToolbox.framework */; };
+		642B9CC71BEF03CD00EF6FC5 /* sk_error.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 642B9CC41BEF03CD00EF6FC5 /* sk_error.pcm */; };
+		642B9CC81BEF03CD00EF6FC5 /* sk_start.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 642B9CC51BEF03CD00EF6FC5 /* sk_start.pcm */; };
+		642B9CC91BEF03CD00EF6FC5 /* sk_stop.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 642B9CC61BEF03CD00EF6FC5 /* sk_stop.pcm */; };
 		647AB9931BEDBCFA0098BA26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 647AB9911BEDBCFA0098BA26 /* InfoPlist.strings */; };
 		647AB9951BEDBCFA0098BA26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9941BEDBCFA0098BA26 /* main.m */; };
 		647AB9991BEDBCFA0098BA26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 647AB9981BEDBCFA0098BA26 /* AppDelegate.m */; };
@@ -62,6 +65,9 @@
 		640AEDAD1BEEF80400786322 /* nmt_recognition.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nmt_recognition.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/nmt_recognition.framework"; sourceTree = "<group>"; };
 		640AEDAE1BEEF80400786322 /* SpeechKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechKit.framework; path = "../../../../Downloads/SpeechKit-iOS-Sample-NMDPTRIAL_ss4547_columbia_edu20151106232211/sample/Frameworks/SpeechKit.framework"; sourceTree = "<group>"; };
 		640AEDBB1BEEF8F600786322 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		642B9CC41BEF03CD00EF6FC5 /* sk_error.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = sk_error.pcm; sourceTree = "<group>"; };
+		642B9CC51BEF03CD00EF6FC5 /* sk_start.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = sk_start.pcm; sourceTree = "<group>"; };
+		642B9CC61BEF03CD00EF6FC5 /* sk_stop.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = sk_stop.pcm; sourceTree = "<group>"; };
 		647AB9851BEDBCFA0098BA26 /* intern1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intern1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647AB9881BEDBCFA0098BA26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		647AB98A1BEDBCFA0098BA26 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642B9CC31BEF03CD00EF6FC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				642B9CC41BEF03CD00EF6FC5 /* sk_error.pcm */,
+				642B9CC51BEF03CD00EF6FC5 /* sk_start.pcm */,
+				642B9CC61BEF03CD00EF6FC5 /* sk_stop.pcm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		647AB97C1BEDBCFA0098BA26 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +180,7 @@
 		647AB98E1BEDBCFA0098BA26 /* intern1 */ = {
 			isa = PBXGroup;
 			children = (
+				642B9CC31BEF03CD00EF6FC5 /* Resources */,
 				647AB9C41BEDC1EA0098BA26 /* Model */,
 				647AB9C31BEDC1D50098BA26 /* GUI */,
 				647AB9971BEDBCFA0098BA26 /* AppDelegate.h */,
@@ -308,7 +325,10 @@
 			files = (
 				647AB99F1BEDBCFA0098BA26 /* Main_iPad.storyboard in Resources */,
 				647AB9A71BEDBCFA0098BA26 /* Images.xcassets in Resources */,
+				642B9CC81BEF03CD00EF6FC5 /* sk_start.pcm in Resources */,
 				647AB99C1BEDBCFA0098BA26 /* Main_iPhone.storyboard in Resources */,
+				642B9CC91BEF03CD00EF6FC5 /* sk_stop.pcm in Resources */,
+				642B9CC71BEF03CD00EF6FC5 /* sk_error.pcm in Resources */,
 				640AED8B1BEE3CE400786322 /* coffee.png in Resources */,
 				647AB9931BEDBCFA0098BA26 /* InfoPlist.strings in Resources */,
 			);
